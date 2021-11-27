@@ -46,11 +46,12 @@ def reconstruct_from_labels(image_id):
             adata = np.ones((w, h))
 
         im[j:je, i:ie] = binary_to_uint8(adata)
-
     Image.fromarray(im).save('prediction_' + '%.3d' % image_id + '.png')
 
     return im
 
 
-for i in range(1, 5):
-    reconstruct_from_labels(i)
+if __name__=='__main__':
+    label_file='dummy_submission.csv'
+    reconstruct_from_labels(1)
+    reconstruct_from_labels(2)

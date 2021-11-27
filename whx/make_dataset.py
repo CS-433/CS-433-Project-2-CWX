@@ -61,6 +61,7 @@ class MyTrainDataSet(data.Dataset):
     def __getitem__(self, index):
         name = self.img_names[index]
         img, label = self.get_image(name)
+        print(np.max(img))
 
         label = label[np.newaxis,:,:]
         label = binarize(label, 0.1)

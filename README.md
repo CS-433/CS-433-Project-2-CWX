@@ -10,3 +10,5 @@ __Team Member__:
 
 ## Requirement
 
+## Checkpoints
+https://drive.google.com/drive/folders/1VPxJjSSlY1VeJWWgAL2eXIICsWvUjpjo?usp=sharing

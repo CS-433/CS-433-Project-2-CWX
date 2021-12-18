@@ -55,3 +55,11 @@ if __name__=='__main__':
     label_file='dummy_submission.csv'
     reconstruct_from_labels(1)
     reconstruct_from_labels(2)
+    reconstruct_from_labels(3)
+    reconstruct_from_labels(4)
+    reconstruct_from_labels(5)
+    reconstruct_from_labels(6)
+    reconstruct_from_labels(7)
+    reconstruct_from_labels(8)
+    reconstruct_from_labels(9)
+    reconstruct_from_labels(10)

@@ -1,18 +1,8 @@
-import gzip
-import os
-import sys
-import urllib
-import matplotlib.image as mpimg
 from PIL import Image
-
-import code
 from mask_to_submission import *
 from tqdm import tqdm
 import numpy
-import torch
-from torch import nn
-from torch.nn import functional as F
-import matplotlib.pyplot as plt
+
 
 NUM_CHANNELS = 3  # RGB images
 PIXEL_DEPTH = 255
@@ -121,17 +111,6 @@ def error_rate(predictions, labels):
             100.0 *
             numpy.sum(numpy.argmax(predictions, 1) == numpy.argmax(labels, 1)) /
             predictions.shape[0])
-
-
-def f1_score(predictions, labels):
-    tp = numpy.sum(numpy.array(predictions == labels)[labels == 1])
-    tn = numpy.sum(numpy.array(predictions == labels)[labels == 0])
-    fp = numpy.sum(numpy.array(predictions != labels)[labels == 0])
-    fn = numpy.sum(numpy.array(predictions != labels)[labels == 1])
-    precision = tp / (tp + fp + 1e-3)
-    recall = tp / (tp + fn + 1e-3)
-    f1 = 2 * precision * recall / (precision + recall + 1e-3)
-    return f1 * 100
 
 
 # Write predictions from neural network to a file

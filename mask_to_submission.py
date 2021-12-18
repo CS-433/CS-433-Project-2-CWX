@@ -3,7 +3,6 @@
 import os
 import numpy as np
 import matplotlib.image as mpimg
-import re
 
 foreground_threshold = 0.25  # percentage of pixels > 1 required to assign a foreground label to a patch
 
@@ -41,7 +40,7 @@ if __name__ == '__main__':
     submission_filename = 'dummy_submission.csv'
     image_filenames = []
     for i in range(1, 51):
-        image_filename = 'data/prediction/LinkNet_resnet101_max_f1/test_' + str(i) + '.png'
+        image_filename = 'data/prediction/rotate+coarsedropout+distortion_max_f1.pth/test_' + str(i) + '.png'
         print(image_filename)
         image_filenames.append(image_filename)
     masks_to_submission(submission_filename, *image_filenames)

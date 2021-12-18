@@ -17,7 +17,7 @@ transpose = True
 one_hot = False
 pretrained = True
 # Load the pre-trained model
-model_name = 'LinkNetFinal_max_f1.pth'
+model_name = 'final.pth'
 
 if __name__ == '__main__':
     if pretrained:

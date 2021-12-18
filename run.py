@@ -25,6 +25,7 @@ if __name__ == '__main__':
         model.eval()
     else:
         model = train.main('model')
+        model_name = 'model'
         model.eval()
     # Create the directory to store the predictions
     path = 'data/test_set_images'

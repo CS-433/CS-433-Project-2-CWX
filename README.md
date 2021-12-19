@@ -2,7 +2,7 @@
 
 ### A LinkNet Based Model to Classify Statellite Images Segments
 
----
+#  
 
 __Team Member (CWX)__: 
   * [Zewei Xu](mailto:zewei.xu@epfl.ch)

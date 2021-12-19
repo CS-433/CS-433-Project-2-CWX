@@ -12,17 +12,29 @@ In addition, we implemented U-Net architecture (and its variants: U-Net++) as a 
 
 ## File/Folder Description
 `/data`: The folder that contains the training and the testing images.
+
 `/log`: The folder that contains the evaluation results of different models.
+
 `/whx`: The U-Net model implemented by Haoxuan Wang.
+
 `Losses.py`: Loss Functions including BCE Loss, Dice Loss, Focal Loss and a mix loss combined by Focal Loss and Dice Loss.
+
 `dataset.py`: Load images and perform data augment on images.
-'Helper.py`: Some helper functions and image transformation
+
+'Helper.py`: Some helper functions and image transformation.
+
 `mask_to_submission.py`:
+
 `model.py`: model implementation
+
 `run.py`:
+
 `submission_to_mask.py`:
+
 `train.py`:
+
 `utile.py`:
+
 `visualization.ipynb`: A visualization of performance of different models. 
 
 ## Requirement

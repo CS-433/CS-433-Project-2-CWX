@@ -1,4 +1,7 @@
 # CS-433-Project-2-CWX
+
+### A LinkNet Based Model to Classify Statellite Images Segments
+
 __Team Member__: 
   * [Zewei Xu](mailto:zewei.xu@epfl.ch)
   * [Haoxuan Wang](mailto:haoxuan.wang@epfl.ch)

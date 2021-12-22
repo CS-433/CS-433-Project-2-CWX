@@ -16,7 +16,7 @@ In addition, we implemented U-Net architecture (and its variants: U-Net++) as a 
 
 
 ## File/Folder Description
-`/data`: The folder that contains the training and the testing images.
+`/data`: The folder that contains the training and the testing images, it is also used to save the prediction masks.
 
 `/log`: The folder that contains the evaluation results of different models.
 
@@ -28,17 +28,31 @@ In addition, we implemented U-Net architecture (and its variants: U-Net++) as a 
 
 'Helper.py`: Some helper functions and image transformation.
 
-`mask_to_submission.py`:
+`mask_to_submission.py`: Convert the prediction results into a submission file.
 
 `model.py`: model implementation
+* Unet
+* LinkNet
+* LinkNet1
+* DinkNet
+* UnetPP
+* LinkNetPP
+* DoubleUnet
 
-`run.py`:
+`run.py`: It creates a model and train it, or loads a pre-trained model, and it makes predictions on the test set.
 
-`submission_to_mask.py`:
+`submission_to_mask.py`:Convert the submission file into prediction images.
 
-`train.py`:
+`train.py`: It trains the model.
 
-`utile.py`:
+`utile.py`: It contains some utile functions, such as:
+* get_loader
+* f1
+* accuracy
+* create_different_prospective
+* combine_different_prospective
+* img_crop
+* combine_img
 
 `visualization.ipynb`: A visualization of performance of different models. 
 
@@ -47,7 +61,13 @@ In addition, we implemented U-Net architecture (and its variants: U-Net++) as a 
 * Jupyter Notebook 6.1.4
 * Numpy 1.20.3
 * PyTorch 1.8.2
-
+* PIL 8.2.0
+* albumentations 1.1.0
+* tqdm 4.59.0
+* matplotlib 3.3.4
+* torchsummary 
+* pandas 1.2.4
 
 ## Checkpoints
+Our pre-trained models can be found here:
 https://drive.google.com/drive/folders/1VPxJjSSlY1VeJWWgAL2eXIICsWvUjpjo?usp=sharing

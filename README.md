@@ -44,13 +44,13 @@ In addition, we implemented U-Net architecture (and its variants: U-Net++) as a 
 `train.py`: It trains the model.
 
 `utile.py`: It contains some utile functions, such as:
-* get_loader
-* f1
-* accuracy
-* create_different_prospective
-* combine_different_prospective
-* img_crop
-* combine_img
+* get_loader: Create the DataLoader class
+* f1: Compute F1 score
+* accuracy: Compute F1 score, Precision and Recall
+* create_different_prospective: Apply transformations to the image and return different prospectives
+* combine_different_prospective: Combine predictions of different prospectives
+* img_crop: Crop the image into patches of a given size
+* combine_img: Combine cropped patches into the original image
 
 `visualization.ipynb`: A visualization of performance of different models. 
 

@@ -1,0 +1,8 @@
+numpy==1.20.3
+torch==1.10.1
+Pillow ==8.3.2
+albumentations==1.1.0
+tqdm==4.59.0
+matplotlib==3.3.4
+torchsummary
+pandas==1.2.4

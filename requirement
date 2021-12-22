@@ -6,3 +6,4 @@ tqdm==4.59.0
 matplotlib==3.3.4
 torchsummary
 pandas==1.2.4
+torchvision==0.11.2

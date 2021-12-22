@@ -20,8 +20,6 @@ In addition, we implemented U-Net architecture (and its variants: U-Net++) as a 
 
 `/log`: The folder that contains the evaluation results of different models.
 
-`/whx`: The U-Net model implemented by Haoxuan Wang.
-
 `Losses.py`: Loss Functions including BCE Loss, Dice Loss, Focal Loss and a mix loss combined by Focal Loss and Dice Loss.
 
 `dataset.py`: Load images and perform data augment on images.

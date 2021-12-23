@@ -10,9 +10,9 @@ __Team Member (CWX)__:
   * [Ganyuan Cao](mailto:ganyuan.cao@epfl.ch)
 
 ## Project Description
-We implemented a model based on the LinkNet architecture to classify the road segments with the satellite images from Google Map. We evaluate the performance of LinkNet, U-Net and their variants. We finally decided to develop our model on the top of LinkNet architecture. 
+We implemented a model based on the LinkNet architecture to classify the road segments with the satellite images from Google Maps. We evaluate the performance of LinkNet, U-Net and their variants. We finally decided to develop our model on the top of LinkNet architecture. 
 
-In addition, we implemented U-Net architecture (and its variants: U-Net++) as a comparision to show the performance of our model. 
+In addition, we implemented U-Net architecture (and its variants: U-Net++) as a comparison to show the performance of our model. 
 
 
 ## File/Folder Description
@@ -24,11 +24,11 @@ In addition, we implemented U-Net architecture (and its variants: U-Net++) as a 
 
 `dataset.py`: Load images and perform data augment on images.
 
-'Helper.py`: Some helper functions and image transformation.
+`Helper.py`: Some helper functions and image transformation.
 
 `mask_to_submission.py`: Convert the prediction results into a submission file.
 
-`model.py`: model implementation
+`model.py`: Model implementation.
 * Unet
 * LinkNet
 * LinkNet1
@@ -39,7 +39,7 @@ In addition, we implemented U-Net architecture (and its variants: U-Net++) as a 
 
 `run.py`: It creates a model and train it, or loads a pre-trained model, and it makes predictions on the test set.
 
-`submission_to_mask.py`:Convert the submission file into prediction images.
+`submission_to_mask.py`: Convert the submission file into prediction images.
 
 `train.py`: It trains the model.
 
@@ -54,18 +54,27 @@ In addition, we implemented U-Net architecture (and its variants: U-Net++) as a 
 
 `visualization.ipynb`: A visualization of performance of different models. 
 
-## Requirement
+## Running requirements
+### Environment
 * Python 3.8.5
 * Jupyter Notebook 6.1.4
+### Required libraries
 * Numpy 1.20.3
 * PyTorch 1.8.2
 * PIL 8.2.0
 * albumentations 1.1.0
 * tqdm 4.59.0
 * matplotlib 3.3.4
-* torchsummary 
+* torchsummary
 * pandas 1.2.4
+* torchvision
+
+To install all the required libraries, you can run the following command from the terminal.
+```sh
+pip install -r requirement
+```
 
 ## Checkpoints
 Our pre-trained models can be found here:
+
 https://drive.google.com/drive/folders/1VPxJjSSlY1VeJWWgAL2eXIICsWvUjpjo?usp=sharing
